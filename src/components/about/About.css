@@ -1,0 +1,142 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 4rem 0;
+}
+
+.about .about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .about-title h3{
+    font-size: 16px;
+    font-weight: 400;   
+    margin: 0;
+    color: #555555;
+}
+.about .about-title h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.about-sec{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 4rem;
+}
+
+.about-sec .about-main{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    justify-content: center;
+}
+
+.exp-edu{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.exp-edu .experience{
+    border: 0.1rem solid rgb(163, 163, 163);;
+    text-align: center;
+    padding: 1.5rem;
+    flex: 1 1 0%;
+    border-radius: 20px;
+}
+
+.exp-edu .experience .exp-icon{
+    margin-bottom: 15px;
+    transform: scale(2);
+}
+.exp-edu .experience h1{
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 5px;
+}
+
+.exp-edu .experience p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.about-sec .about-img img{
+    width: 480px;
+    height: 480px;
+    border-radius: 40px;
+}
+
+.about-main .about-des{
+    text-align: justify;
+}
+
+.about-main .about-des p{
+    width: 110%;
+    color: #3c3838;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+@media  screen and (max-width: 480px){
+    .about .about-title h1{
+        font-size: 32px;
+    }
+    .about .about-title h3{
+        font-size: 14px;
+    }
+    .about-sec{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+    .about-sec .about-img {
+        width: auto;
+        height: 46vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-sec .about-img img{
+        width: auto;
+        height: 46vw;
+        border-radius: 40px;
+    }
+    .about-sec .about-main{
+        padding: 2rem 0rem;
+        justify-content: center;
+    }
+    .exp-edu .experience{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+    .exp-edu .experience h1{
+        font-size: 18px;
+    }
+
+    .exp-edu .experience p{
+        font-size: 14px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .about-main .about-des p{
+        width: 100%;
+        /* text-align: center; */
+        line-height: 2.4rem;
+    }
+    
+}
+

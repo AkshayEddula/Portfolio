@@ -1,0 +1,113 @@
+.exp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.exp .exp-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exp .exp-title h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    margin:  0;
+}
+.exp .exp-title h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+.exp .exp-skills{
+    display: flex;
+    gap: 3rem;
+    margin: 4rem 5rem;
+}
+.exp .exp-skills .skills{
+    display: flex;
+    flex-direction: column;
+    border: 0.15rem solid #555555;
+    border-radius: 30px;
+    padding: 3rem 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.exp .exp-skills .skills h1{
+    font-size: 28px;
+    font-weight: 600;
+    color: #555555;
+    margin:0;
+    margin-bottom: 2rem;
+}
+
+.exp .exp-skills .skills .skill-tags{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    column-gap: 4rem;
+    row-gap: 3rem;
+}
+.exp .exp-skills .skills .skill-tags .tag{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+.exp .exp-skills .skills .skill-tags .tag h1{
+    font-size: 19px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+}
+.exp .exp-skills .skills .skill-tags .tag svg{
+    transform: scale(2);
+}
+
+@media  screen and (max-width: 480px){
+    .exp .exp-title h3{
+        font-size: 14px;    
+    }
+    .exp .exp-title h1{
+        font-size: 32px;
+    }
+    .exp .exp-skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem 1rem;
+    }
+    .exp .exp-skills .skills{
+        display: flex;
+        flex-direction: column;
+        border: 0.15rem solid #555555;
+        border-radius: 30px;
+        padding: 2rem 1.5rem;
+    }
+    .exp .exp-skills .skills .skill-tags{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        justify-items:flex-start;
+        column-gap: 2.2rem;
+        row-gap: 2rem;
+    }
+    .exp .exp-skills .skills h1{
+        font-size: 24px;
+        font-weight: 600;
+        color: #555555;
+        margin:0;
+        margin-bottom: 1.5rem;
+    }
+    .exp .exp-skills .skills .skill-tags .tag{
+        align-items: center;
+        gap: 1rem;
+    }   
+    .exp .exp-skills .skills .skill-tags .tag h1{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .exp .exp-skills .skills .skill-tags .tag svg{
+        transform: scale(1.5);
+    }
+}

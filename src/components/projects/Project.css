@@ -1,0 +1,142 @@
+.project {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+}
+
+.project .project-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project .project-title h3{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    margin: 5px;
+}
+
+.project .project-title h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin: 5px;
+}
+
+.project .projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.project .projects .project-1{
+    display: flex;
+    border: 0.11rem solid #555555;
+    border-radius: 30px;
+    padding: 3rem;
+    margin:2rem 8rem;
+}
+
+.project .projects .project-1 .projet-img img{
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+}
+
+.project .projects .project-1 .project-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 5rem;
+}
+
+.project .projects .project-1 .project-info h1{
+    font-size: 38px;
+    font-weight: 600;
+    color: #555555;
+    margin: 0px 0;
+}
+
+.project .projects .project-1 .project-info p{
+    color: rgb(30, 28, 28);
+    font-size: 18px;
+    line-height: 1.9rem;
+}
+
+.project .projects .project-1 .project-info .project-btns{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.project .projects .project-1 .project-info .project-btns button{
+    outline: 0 !important;
+    padding: 15px 30px;
+    font-family: 'Poppins',sans-serif;
+    border: solid 1px rgb(37, 36, 36);
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.project .projects .project-1 .project-info .project-btns button:hover{
+    background-color: #555555;
+    color: white;
+    transition: all 300ms ease;
+}
+
+@media only screen and (max-width: 480px){
+    .project .projects .project-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+        margin:2rem 1rem;
+    }
+    .project.projects{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+    .project .projects .project-1 .project-info{
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 1rem;
+    }
+    .project .project-title h3{
+        font-size: 14px;
+    }
+    
+    .project .project-title h1{
+        font-size: 32px;
+    }
+    .project .projects .project-1 .projet-img img{
+        width: auto;
+        height: 70vw;
+        border-radius: 30px;
+    }
+    .project .projects .project-1 .project-info h1{
+        font-size: 30px;
+        font-weight: 600;
+        color: #555555;
+        margin: 10px 0 ;
+    }
+    
+    .project .projects .project-1 .project-info p{
+        color: rgb(30, 28, 28);
+        font-size: 16px;
+        line-height: 1.9rem;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .project .projects .project-1 .project-info .project-btns button{
+        padding: 15px 30px;
+        font-family: 'Poppins',sans-serif;
+        border: solid 1px rgb(37, 36, 36);
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
